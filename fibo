@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main(void)
+{ 
+  int fibo1, fibo2, i; 
+  fibo1 = 1; 
+	fibo2 = 1; 
+	printf ("%d\n", fibo1); 
+	for (i = 0; i < 200; i++) 
+	{ 
+		printf ("%d\n", fibo2); 
+		fibo2 += fibo1; 
+		fibo1 = fibo2 - fibo1; 
+	} 
+	getch();
